@@ -1,0 +1,8 @@
+build:
+  image: docker.it.ardentcreative.com/ardent/wordpress/update/transfer:latest
+  only:
+    - tags
+  script:
+    - /release theme
+  tags:
+    - docker
